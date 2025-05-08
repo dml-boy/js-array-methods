@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modern E-commerce</title>
+  <link rel="stylesheet" href="ecomm.css" />
+</head>
+<body>
+  <div class="controls">
+    <input type="text" id="search" placeholder="Search products..." />
+    <select id="sort">
+      <option value="">Sort by...</option>
+      <option value="priceAsc">Price: Low to High</option>
+      <option value="priceDesc">Price: High to Low</option>
+    </select>
+  </div>
+
+  <div id="product-list" class="product-list"></div>
+
+  <h2>🛒 Your Cart</h2>
+  <div id="cart-list" class="cart-list"></div>
+  <p class="total"><strong>Total:</strong> $<span id="total">0</span></p>
+
+  <script src="ecomm.js"></script>
+</body>
+</html>
