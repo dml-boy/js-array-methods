@@ -40,16 +40,8 @@ const products = [
   
     const total = cart.reduce((sum, item) => sum + item.price, 0);
     totalDisplay.textContent = total.toFixed(2);
-  
-    // Example: some(), every()
-    if (cart.some(p => p.price > 500)) {
-      console.log("Cart has expensive items.");
-    }
-    if (cart.every(p => p.price > 10)) {
-      console.log("All cart items are reasonably priced.");
-    }
-  }
-  
+
+}
   function addToCart(id) {
     const product = products.find(p => p.id === id); // find()
     if (product) cart.push(product); // push()
